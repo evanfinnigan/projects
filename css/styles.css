@@ -116,7 +116,7 @@ a {
 .short-preview img {
   margin-bottom: 10px;
   margin-top: 10px;
-  width: calc(100% - 20px);
+  width: calc(100% - 2px);
   border: 1px solid white;
   height: 7em;
   object-fit: cover;
