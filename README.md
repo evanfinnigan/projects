@@ -1,2 +1,2 @@
-# games
-Some example projects for learning to code.
+# some games
+just some simple example projects for people learning to code

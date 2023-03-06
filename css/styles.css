@@ -1,0 +1,139 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 56px auto 56px;
+  grid-template-areas:
+    "nav"
+    "content"
+    "footer";
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', Arial, sans-serif;
+}
+
+header {
+  grid-area: nav;
+  overflow: hidden;
+}
+
+#topnav {
+  display: flex;
+  justify-content: start;
+  flex-basis: 200px;
+  color: white;
+  background-color: black;
+  font-size: 18px;
+  font-family: 'Roboto Slab', Arial, sans-serif;
+  overflow: hidden;
+}
+
+#topnav a {
+  padding: 16px;
+  color: white;
+}
+
+main {
+  width: 100%;
+  color: white;
+  background: rgb(24, 24, 24);
+}
+
+.content {
+  grid-area: content;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  grid-area: footer;
+  text-align: left;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+footer a {
+  color: white;
+}
+
+.invert {
+  filter: invert();
+}
+
+a {
+  text-decoration: none;
+}
+
+.display-case {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.short-preview {
+  display: flex;
+  flex-direction: column;
+  background: #171E21;
+  max-width: 400px;
+  height: auto;
+  padding: 25px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.short-preview a {
+  padding: 0;
+  margin: auto;
+  text-align: left;
+  text-decoration: none;
+  color: #81d4fa;
+  font-size: 1.3em;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.short-preview a:hover {
+  text-decoration: underline;
+}
+
+.short-preview img {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: calc(100% - 20px);
+  border: 1px solid white;
+  height: 7em;
+  object-fit: cover;
+}
+
+.tags {
+  min-height: 2em;
+  line-height: 2em;
+}
+
+.tag {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: bold;
+  color: #fffdd0;
+  background-color: #941a2c;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8em;
+}
+
