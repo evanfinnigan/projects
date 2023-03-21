@@ -45,7 +45,7 @@ header {
 main {
   width: 100%;
   color: white;
-  background: rgb(24, 24, 24);
+  background: #000000;
 }
 
 .content {
@@ -90,7 +90,7 @@ a {
 .short-preview {
   display: flex;
   flex-direction: column;
-  background: #171E21;
+  background: #000000;
   max-width: 400px;
   height: auto;
   padding: 25px;
